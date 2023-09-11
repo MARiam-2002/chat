@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-6.2.0-web/css/fontawesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Chat app</title>
+  </head>
+
+  <body>
+    <h1 class="title">Chat App</h1>
+
+    <div class="main">
+      <div class="name">
+        <span><img src="320ed3142ddf441bdb820c3d0411477d.jpg" alt="" /></span>
+
+        <input
+          type="text"
+          id="name-input"
+          class="name-input"
+          value="Enter Name"
+          maxlength="20"
+        />
+      </div>
+
+      <ul class="message-container" id="message-container"></ul>
+
+      <form class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="message-input"
+        />
+
+        <div class="v-divider"></div>
+
+        <button type="submit" class="send-button">
+          send <span><i class="fas fa-paper-plane"></i></span>
+        </button>
+      </form>
+    </div>
+
+    <h3 class="clients-total" id="client-total">Total clients: 2</h3>
+
+    <!-- ############################################################################ -->
+    <!-- ############################################################################ -->
+
+    <script src="./node_modules/socket.io-client/dist/socket.io.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+      integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
